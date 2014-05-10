@@ -1,0 +1,12 @@
+<h1>Welcome</h1>
+<p>Find your access token here 
+	<a href="https://developers.facebook.com/tools/explorer">Graph API Explorer</a>
+</p>
+<p>
+	Please insert the access token
+	<%= form_tag({controller: "welcome", action: "choose_action"}, method: "post") do %>
+		<%= label_tag(:q, "Access Token:") %>
+		<%= text_field_tag(:q) %>
+		<%= submit_tag("Post")%>
+	<% end %>
+</p>
