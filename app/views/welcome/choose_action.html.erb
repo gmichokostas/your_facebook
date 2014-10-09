@@ -1,5 +1,12 @@
 <h1>Choose your action</h1>
-<p>
+<nav>
+	<ul class="nav pull-left">
+		<li><%= link_to "Facebook friends", get_friends_path(:access_token => params[:access_token]) %></li>
+		<li><%= link_to "Facebook groups", get_groups_path(:access_token => params[:access_token]) %></li>
+		<li><%= link_to "Facebook photos", get_photos_path(:access_token => params[:access_token]) %></li>
+	</ul>
+</nav>
+<!--<p>
 	<%= link_to "Facebook friends", get_friends_path(:access_token => params[:access_token]) %>
 </p>
 <p>
@@ -7,4 +14,4 @@
 </p>
 <p>
 	<%= link_to "Facebook photos", get_photos_path(:access_token => params[:access_token])%>
-</p>
+</p>-->
