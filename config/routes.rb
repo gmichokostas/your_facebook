@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :friends
+
   get 'welcome/index'
   post 'welcome/choose_action'
 

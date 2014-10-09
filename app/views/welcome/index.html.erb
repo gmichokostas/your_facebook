@@ -5,8 +5,14 @@
 <p>
 	Please insert the access token
 	<%= form_tag({controller: "welcome", action: "choose_action"}, method: "post") do %>
-		<%= label_tag(:q, "Access Token:") %>
-		<%= text_field_tag(:q) %>
+		<%= label_tag(:access_token, "Access Token:") %>
+		<%= text_field_tag(:access_token) %>
 		<%= submit_tag("Post")%>
 	<% end %>
-</p>
+</p> 
+<!--<p>
+	<form name="input" action="choose_action" method="post">
+		Access Token: <input type="text" name="access_token">
+		<input type="submit" value="submit">
+	</form>	
+</p> -->

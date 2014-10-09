@@ -1,5 +1,10 @@
 <h1>Choose your action</h1>
 <p>
-	<% @@ACCESS_TOKEN = params[:q] %>
-	<%= link_to "Facebook friends", get_friends_path %>
+	<%= link_to "Facebook friends", get_friends_path(:access_token => params[:access_token]) %>
+</p>
+<p>
+	<%= link_to "Facebook groups", get_groups_path(:access_token => params[:access_token])%>
+</p>
+<p>
+	<%= link_to "Facebook photos", get_photos_path(:access_token => params[:access_token])%>
 </p>

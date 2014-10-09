@@ -4,5 +4,7 @@
 			<li><%= group %></li>
 		<% end %>
 	</ul>
-	<%= @friends %>
+</p>
+<p>
+	<%= link_to "main menu", welcome_choose_action_path(:access_token => params[:access_token]), :method => :post %>
 </p>
